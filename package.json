@@ -2,7 +2,7 @@
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://localhost:5001/",
+  "proxy": "http://172.16.201.75:8081/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -12,6 +12,7 @@
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "express": "^4.18.3",
+    "http-proxy-middleware": "^2.0.6",
     "mongoose": "^8.2.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

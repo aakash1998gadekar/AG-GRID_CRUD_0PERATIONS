@@ -11,6 +11,7 @@ const UI = ({ data }) => {
 
   const [rowData, setRowData] = useState([]);
   const [colDefs, setColDefs] = useState([]);
+ 
   // console.log(data.form.blocks[0].fields);
   // console.log(data.list.fields);
 
@@ -32,6 +33,7 @@ const UI = ({ data }) => {
     try {
       // Make a DELETE request to your API endpoint
       await axios.delete(`${baseURL}/api/${id}`);
+      // await axios.delete(`${baseURL}/api/${id}`
       
       // If deletion is successful, update the state (rowData)
       const res = await axios.get(`${baseURL}/api`);
@@ -95,7 +97,7 @@ const UI = ({ data }) => {
         setRowData(res.data.data);
       } catch (error) {
         console.error("Error fetching data:", error);
-        // Handle error as needed (e.g., show a notification)
+        // Handle error as needed (e.g., show a notification)  
       }
     };
 
